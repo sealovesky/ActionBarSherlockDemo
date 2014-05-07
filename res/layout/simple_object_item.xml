@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/txtProductName"
+        android:textSize="@dimen/text_Size_Product_Name"
+        android:padding="@dimen/text_Padding_Product_Item"
+        android:text="@string/text_Product_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtProductPrice"
+        android:textSize="@dimen/text_Size_Product_Price"
+        android:padding="@dimen/text_Padding_Product_Item"
+        android:text="@string/text_Product_Price"
+        android:layout_below="@+id/txtProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imgAbout"
+        android:padding="@dimen/text_Padding_Product_Item"
+        android:contentDescription="@string/text_Product_About_Daily_Deal"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_about"/>
+    <RatingBar
+        android:id="@+id/ratingBarProductRating"
+        android:max="5"
+        android:paddingLeft="@dimen/text_Padding_Product_Item"
+        android:layout_below="@+id/txtProductPrice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Add Some colors using Hex Values here -->
+    
+    <color name="color_Dark_Grey">#999999</color>
+    <color name="color_Orange">#FF6A19</color>
+    <color name="color_Aqua">#00FFF6</color>
+</resources>
