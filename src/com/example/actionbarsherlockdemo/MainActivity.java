@@ -11,6 +11,14 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.example.adapters.SimpleObjectAdapter;
 import com.example.data.SimpleObject;
 
+/**
+ * Annie here is a very simple Android Activity that uses a ListView to display
+ * What I have called "SimpleObject" data. Its pretty simple for now but we can make it more
+ * complicated as you learn more about android Application Life Cycle, etc.
+ * 
+ * @author lt_tibs (This is me!) 
+ *
+ */
 public class MainActivity extends SherlockActivity {
 	
 	
@@ -27,8 +35,15 @@ public class MainActivity extends SherlockActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Reference the UI Elements
         mListViewItems = (ListView) findViewById(R.id.listViewDemoItems);
         
+        /* Annie get a Reference to the ActionBar here.
+         * Hint: ActionBar is the Widget but you must use getSupportActionBar()
+         * method to get a reference since this is ActionBarSherlock.
+         */
+        
+        // Build the Items List
         items = buildObjects(OBJECT_COUNT);
         
         if((items != null) && (items.size() >0))
