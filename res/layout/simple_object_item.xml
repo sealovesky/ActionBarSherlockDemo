@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="vertical" >
     <TextView
         android:id="@+id/txtProductName"
@@ -30,6 +31,8 @@
         android:src="@drawable/ic_action_about"/>
     <RatingBar
         android:id="@+id/ratingBarProductRating"
+        android:focusable="false"
+        android:isIndicator="true"
         android:max="5"
         android:paddingLeft="@dimen/text_Padding_Product_Item"
         android:layout_below="@+id/txtProductPrice"

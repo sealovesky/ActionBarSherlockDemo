@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import com.example.adapters.SimpleObjectAdapter;
 import com.example.data.SimpleObject;
 
@@ -40,7 +42,11 @@ public class MainActivity extends SherlockActivity {
         
         /* Annie get a Reference to the ActionBar here.
          * Hint: ActionBar is the Widget but you must use getSupportActionBar()
-         * method to get a reference since this is ActionBarSherlock.
+         * method to get a reference since this is ActionBarSherlock. If you want to add Items
+         * to the ActionBar Dynamically this is where you can do so. . . Getting this reference is only 
+         * really useful when we want to change how the ActionBar works. So this is optional. Below i have
+         * defined some directions on how to add the Items to the ActionBar by inflating the Layout using
+         * XML main.xml file
          */
         
         // Build the Items List
@@ -57,6 +63,37 @@ public class MainActivity extends SherlockActivity {
         
        
     }
+    
+    /*------------------------------------------------------------------------------------------------
+     * Annie edit this here to Create the Options Menu in the Action Bar. This should be fairly simple
+     * to do. If you have difficulty please feel free to ask questions.
+     -----------------------------------------------------------------------------------------------*/
+    
+    /**
+     * TODO: Class Override Method
+     * 
+     * Add The onCreateOptionsMenu(Menu menu) method here
+     * and use MenuInflator Object to inflate the Layout from main.xml layout file.
+     * Make sure to add some items to the menu.xml so items will show up.
+     * 
+     * Hint: to add this method right click, select source, Override/Implement methods and
+     * select it from the list of Override Methods.
+     */
+    
+    
+    
+    /**
+     * TODO: Class Override Method
+     * 
+     * Add the onOptionsItemSelected(MenuItem item) method here
+     * and use it to interact with the ActionBar Items
+     * 
+     * Hint: to add this method right click, select source, Override/Implement methods and
+     * select it from the list of Override Methods. Menus are inflated using a MenuInflater Object.
+     * ActionBarSherlock uses this a little differently. Try looking it up and implementing it below using the
+     * main.xml file in the res/menu directory
+     */
+    
     
     /**
      * This method creates the SimpleObject items for the ListView.
@@ -91,7 +128,7 @@ public class MainActivity extends SherlockActivity {
 							5,3,4,5,2,
 							4,1,5,2,3};
 		if(objectCount > products.length){
-			//TODO: Build an alert Dialog here to catch this error condition and alert the user
+			// TODO: Build an alert Dialog here to catch this error condition and alert the user
 			
 			
 		}else{
@@ -122,9 +159,5 @@ public class MainActivity extends SherlockActivity {
 		
 		// Return the itemObjects ArrayList
 		return itemObjects;
-	}
-
-
-	
-
+    }
 }

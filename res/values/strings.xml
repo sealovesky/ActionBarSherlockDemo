@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ActionBarSherlockDemo</string>
+    <string name="app_name">ABSDemo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
     <string name="text_Product_Name">Product Name</string>
     <string name="text_Product_Price">$00.00</string>
    	<string name="text_Product_About_Daily_Deal">This product is a Daily Deal!</string>
+   	
+   	<!-- Add some String here for the Menu Items you create so they are not hard coded in the Layout file -->
+   	
+   	
+   	
+   	
 
 </resources>
